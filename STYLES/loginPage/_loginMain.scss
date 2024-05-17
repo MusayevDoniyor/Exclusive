@@ -1,0 +1,343 @@
+// For larger screens
+@media screen and (min-width:1024px) {
+    .loginSection {
+        width: 85%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        margin: 3% auto 10px;
+        justify-content: space-around;
+    }
+
+    .imgSide {
+        width: 57%;
+        height: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .loginSide {
+        width: 37%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            width: auto;
+            height: auto;
+            font-family: $interFont;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 30px;
+            letter-spacing: 4px;
+            margin-top: 15px;
+            margin-bottom: 7px;
+        }
+
+        p {
+            width: auto;
+            height: auto;
+            font-family: $poppinsfont;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-top: 25px;
+        }
+
+        label {
+            width: 100%;
+            height: auto;
+            gap: 8px;
+            border-bottom: 1px solid rgba(0, 0, 0, 1);
+            padding-bottom: 10px;
+        }
+
+        label input {
+            width: 100%;
+            padding: 9px 0;
+            border: none;
+            outline: none;
+            font-family: $poppinsfont;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+
+            &::placeholder {
+                opacity: 40%;
+                padding: 5px;
+            }
+        }
+
+        .loginActions {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: $poppinsfont;
+
+
+            button {
+                padding: 16px 48px;
+                border: none;
+                border-radius: 4px;
+                gap: 10px;
+                background-color: rgba(219, 68, 68, 1);
+                color: white;
+                font-family: $poppinsfont;
+                cursor: pointer;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            a {
+                color: rgba(219, 68, 68, 1);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+// For medium screens
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .loginSection {
+        width: 85%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        margin: 3% auto 10px;
+        flex-direction: column;
+    }
+
+    .imgSide {
+        width: 95%;
+        height: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .loginSide {
+        width: 95%;
+        height: auto;
+        display: flex;
+        margin-top: 15px;
+        flex-direction: column;
+
+        h2 {
+            width: auto;
+            height: auto;
+            font-family: $interFont;
+            font-weight: 500;
+            font-size: 34px;
+            line-height: 30px;
+            letter-spacing: 3px;
+            margin-top: 15px;
+            margin-bottom: 7px;
+        }
+
+        p {
+            width: auto;
+            height: auto;
+            font-family: $poppinsfont;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-top: 25px;
+        }
+
+        label {
+            width: 100%;
+            height: auto;
+            gap: 8px;
+            border-bottom: 1px solid rgba(0, 0, 0, 1);
+            padding-bottom: 10px;
+        }
+
+        label input {
+            width: 100%;
+            padding: 10px 0;
+            border: none;
+            outline: none;
+            font-family: $poppinsfont;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 24px;
+
+            &::placeholder {
+                opacity: 40%;
+                padding: 5px;
+            }
+        }
+
+        .loginActions {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: $poppinsfont;
+
+
+            button {
+                padding: 16px 48px;
+                border: none;
+                border-radius: 4px;
+                gap: 10px;
+                background-color: rgba(219, 68, 68, 1);
+                color: white;
+                font-family: $poppinsfont;
+                cursor: pointer;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            a {
+                color: rgba(219, 68, 68, 1);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+
+// For small screens
+@media screen and (max-width:767px) and (min-width:320px) {
+    .loginSection {
+        width: 85%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        margin: 3% auto 10px;
+        flex-direction: column;
+    }
+
+    .imgSide {
+        width: 95%;
+        height: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .loginSide {
+        width: 95%;
+        height: auto;
+        display: flex;
+        margin-top: 12px;
+        flex-direction: column;
+
+        h2 {
+            width: auto;
+            height: auto;
+            font-family: $interFont;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 28px;
+            letter-spacing: 3px;
+            margin-top: 15px;
+            margin-bottom: 7px;
+        }
+
+        p {
+            width: auto;
+            height: auto;
+            font-family: $poppinsfont;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        label {
+            width: 100%;
+            height: auto;
+            gap: 8px;
+            border-bottom: 1px solid rgba(0, 0, 0, 1);
+            padding-bottom: 10px;
+        }
+
+        label input {
+            width: 100%;
+            padding: 10px 0;
+            border: none;
+            outline: none;
+            font-family: $poppinsfont;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+
+            &::placeholder {
+                opacity: 40%;
+                padding: 5px;
+            }
+        }
+
+        .loginActions {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-family: $poppinsfont;
+
+
+            button {
+                padding: 14px 40px;
+                border: none;
+                border-radius: 4px;
+                background-color: rgba(219, 68, 68, 1);
+                color: white;
+                font-family: $poppinsfont;
+                cursor: pointer;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 22px;
+                margin-bottom: 10px;
+            }
+
+            a {
+                color: rgba(219, 68, 68, 1);
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                margin-right: 5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,211 @@
+// For larger versions
+@media screen and (min-width:1024px) {
+    .hero-section {
+        width: 95%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #000000;
+        margin: 5% auto;
+
+        * {
+            color: white;
+        }
+    }
+
+    .textSide {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+    .textSide .textSide-title {
+        width: 75%;
+        margin: 0 auto;
+        padding-top: 80px;
+        display: flex;
+        gap: 24px;
+        font-family: $poppinsfont;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .textSide .textSide-discount {
+        width: 75%;
+        margin: -25px auto 0;
+        font-family: $interFont;
+        font-weight: 600;
+        font-size: 48px;
+        letter-spacing: 4px;
+    }
+
+    .textSide-shopNow {
+        width: 75%;
+        margin: -25px auto 0;
+        gap: 8px;
+        align-items: center;
+
+        a {
+            font-family: $poppinsfont;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+        }
+
+        i {
+            font-size: 20px;
+            position: absolute;
+        }
+    }
+
+    .imgSide {
+        width: auto;
+        height: auto;
+    }
+}
+
+// For medium versions
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .hero-section {
+        width: 95%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #000000;
+        margin-top: 5%;
+        margin: 3% auto;
+
+        * {
+            color: white;
+        }
+    }
+
+    .textSide {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+    .textSide .textSide-title {
+        width: 75%;
+        margin: 0 auto;
+        padding-top: 80px;
+        display: flex;
+        gap: 24px;
+        font-family: $poppinsfont;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .textSide .textSide-discount {
+        width: 75%;
+        margin: -25px auto 0;
+        font-family: $interFont;
+        font-weight: 600;
+        font-size: 44px;
+        letter-spacing: 4px;
+    }
+
+    .textSide-shopNow {
+        width: 75%;
+        margin: -25px auto 0;
+        gap: 8px;
+        align-items: center;
+
+        a {
+            font-family: $poppinsfont;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+        }
+
+        i {
+            font-size: 20px;
+            position: absolute;
+        }
+    }
+
+    .imgSide {
+        width: auto;
+        height: auto;
+    }
+}
+
+
+// For phone versions
+@media screen and (min-width:320px) and (max-width:767px) {
+    .hero-section {
+        width: 95%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #000000;
+        margin: 5% auto;
+
+        * {
+            color: white;
+        }
+    }
+
+    .textSide {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+    .textSide .textSide-title {
+        width: 75%;
+        margin: 0 auto;
+        padding-top: 80px;
+        display: flex;
+        gap: 24px;
+        font-family: $poppinsfont;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .textSide .textSide-discount {
+        width: 80%;
+        margin: -25px auto 0;
+        font-family: $interFont;
+        font-weight: 600;
+        font-size: 40px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    .textSide-shopNow {
+        width: 75%;
+        margin: -25px auto 0;
+        gap: 8px;
+        align-items: center;
+
+        a {
+            font-family: $poppinsfont;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 500;
+        }
+
+        i {
+            font-size: 20px;
+            position: absolute;
+        }
+    }
+
+    .imgSide {
+        width: auto;
+        height: auto;
+    }
+}

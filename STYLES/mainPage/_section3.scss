@@ -1,0 +1,271 @@
+// For larger versions
+@media screen and (min-width:1024px) {
+    .section3 {
+        width: 95%;
+        display: flex;
+        margin: 0 auto 7%;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #000000;
+        color: white;
+    }
+
+    .section3-textSide {
+        width: 49%;
+        height: auto;
+    }
+
+    .textSide-title p {
+        font-family: $poppinsfont;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #00FF66;
+    }
+
+    .textSide-heading {
+        font-family: $interFont;
+        font-weight: 600;
+        font-size: 46px;
+        line-height: 60px;
+        letter-spacing: 1px;
+    }
+
+    .dates {
+        width: 75%;
+        height: auto;
+        display: flex;
+        gap: 24px;
+        margin-top: -10px;
+
+        div {
+            width: 62px;
+            height: 62px;
+            align-items: center;
+            text-align: center;
+            background-color: white;
+            border-radius: 50%;
+            font-family: $poppinsfont;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: black;
+            padding-top: 10px;
+
+            span {
+                display: block;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    .btnBuy {
+        width: auto;
+        height: auto;
+
+        button {
+            padding: 16px 48px;
+            border: none;
+            background-color: #00FF66;
+            color: white;
+            cursor: pointer;
+            gap: 10px;
+            border-radius: 4px;
+            font-family: $poppinsfont;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+// For medium versions
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .section3 {
+        width: 95%;
+        display: flex;
+        margin: 0 auto 7%;
+        flex-direction: column;
+        align-items: center;
+        background-color: #000000;
+        color: white;
+    }
+
+    .section3-textSide {
+        width: 80%;
+        height: auto;
+    }
+
+    .textSide-title p {
+        font-family: $poppinsfont;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #00FF66;
+        margin-top: 20px;
+    }
+
+    .textSide-heading {
+        font-family: $interFont;
+        font-weight: 600;
+        font-size: 46px;
+        line-height: 60px;
+        letter-spacing: 1px;
+    }
+
+    .dates {
+        width: 75%;
+        height: auto;
+        display: flex;
+        gap: 22px;
+        margin-top: -10px;
+
+        div {
+            width: 60px;
+            height: 60px;
+            align-items: center;
+            text-align: center;
+            background-color: white;
+            border-radius: 50%;
+            font-family: $poppinsfont;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 17px;
+            color: black;
+            padding-top: 9px;
+
+            span {
+                display: block;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 19px;
+            }
+        }
+    }
+
+    .btnBuy {
+        width: auto;
+        height: auto;
+
+        button {
+            padding: 15px 46px;
+            border: none;
+            background-color: #00FF66;
+            color: white;
+            cursor: pointer;
+            gap: 10px;
+            border-radius: 4px;
+            font-family: $poppinsfont;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+// For phone versions
+@media screen and (min-width:320px) and (max-width:767px) {
+    .section3 {
+        width: 95%;
+        display: flex;
+        margin: 0 auto 7%;
+        flex-direction: column;
+        align-items: center;
+        background-color: #000000;
+        color: white;
+    }
+
+    .section3-textSide {
+        width: 90%;
+        height: auto;
+    }
+
+    .textSide-title p {
+        font-family: $poppinsfont;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        color: #00FF66;
+        margin-top: 20px;
+    }
+
+    .textSide-heading {
+        font-family: $interFont;
+        text-align: center;
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 60px;
+        letter-spacing: 1px;
+    }
+
+    .dates {
+        width: 80%;
+        height: auto;
+        display: flex;
+        gap: 22px;
+        margin: -10px auto 0;
+
+        div {
+            width: 60px;
+            height: 60px;
+            align-items: center;
+            text-align: center;
+            background-color: white;
+            border-radius: 50%;
+            font-family: $poppinsfont;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 16px;
+            color: black;
+            padding-top: 10px;
+
+            span {
+                display: block;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    .btnBuy {
+        width: auto;
+        height: auto;
+
+        button {
+            padding: 14px 44px;
+            border: none;
+            background-color: #00FF66;
+            color: white;
+            cursor: pointer;
+            gap: 10px;
+            border-radius: 4px;
+            font-family: $poppinsfont;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

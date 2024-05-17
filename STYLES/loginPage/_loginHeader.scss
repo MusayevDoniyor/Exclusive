@@ -1,0 +1,496 @@
+// For larger screens
+@media screen and (min-width:1024px) {
+    header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: 1px solid #000000;
+    }
+
+    .navMenu {
+        display: none;
+    }
+
+    .topHeader {
+        * {
+            color: #FAFAFA;
+            font-family: $poppinsfont;
+        }
+
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #000000;
+    }
+
+    .discount {
+        gap: 8px;
+        width: 52%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        margin-left: 15%;
+
+
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        .shopNow a {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            text-decoration: underline;
+        }
+    }
+
+    .languageSelect {
+
+        .languageOptions {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            background-color: #000000;
+            text-align: center;
+            display: none;
+            padding: 3px 12px 6px;
+
+            a {
+                display: block;
+            }
+
+            a:hover {
+                font-weight: 700;
+            }
+        }
+
+        a p {
+            width: auto;
+            height: auto;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            align-items: center;
+            position: relative;
+        }
+
+        a p i {
+            font-size: 21px;
+            position: absolute;
+        }
+    }
+
+    .header {
+        width: 85%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        * {
+            font-family: $poppinsfont;
+            color: #000000;
+        }
+
+        .logo {
+            font-family: $interFont;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 24px;
+            letter-spacing: 3px;
+        }
+
+        nav ul {
+            width: auto;
+            height: auto;
+            display: flex;
+            gap: 48px;
+        }
+
+        ul li a {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .components {
+            width: auto;
+            height: auto;
+            display: flex;
+            gap: 24px;
+            justify-content: space-around;
+            align-items: center;
+
+
+            i {
+                font-size: 21px;
+            }
+        }
+
+        .search-component label {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            gap: 34px;
+            border-radius: 4px;
+            background-color: #F5F5F5;
+
+            input {
+                width: 100%;
+                padding: 7px 12px;
+                border: none;
+                border-radius: 4px;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 18px;
+                background-color: #F5F5F5;
+                outline: none;
+            }
+
+            input::placeholder {
+                opacity: 50%;
+                color: #000000;
+            }
+
+
+        }
+    }
+}
+
+// For medium screens
+@media screen and (min-width:768px) and (max-width:1023px) {
+    header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: 1px solid #000000;
+    }
+
+    .navMenu {
+        display: none;
+    }
+
+    .topHeader {
+        * {
+            color: #FAFAFA;
+            font-family: $poppinsfont;
+        }
+
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #000000;
+    }
+
+    .discount {
+        gap: 8px;
+        width: 60%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        margin-left: 5%;
+        text-align: center;
+
+
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .shopNow a {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 22px;
+            text-decoration: underline;
+        }
+    }
+
+    .languageSelect {
+
+        .languageOptions {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            background-color: #000000;
+            text-align: center;
+            display: none;
+            padding: 3px 11px 5px;
+
+            a {
+                display: block;
+            }
+
+            a:hover {
+                font-weight: 700;
+            }
+        }
+
+        a p {
+            width: auto;
+            height: auto;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            align-items: center;
+            position: relative;
+        }
+
+        a p i {
+            font-size: 20px;
+            position: absolute;
+        }
+    }
+
+    .header {
+        width: 87%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        * {
+            font-family: $poppinsfont;
+            color: #000000;
+        }
+
+        .logo {
+            font-family: $interFont;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 22px;
+            letter-spacing: 2px;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            width: auto;
+            height: auto;
+            display: flex;
+            gap: 44px;
+            align-items: center;
+        }
+
+        ul li a {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        .components {
+            width: auto;
+            height: auto;
+            display: flex;
+            gap: 22px;
+            justify-content: space-around;
+            align-items: center;
+
+
+            i {
+                font-size: 20px;
+            }
+        }
+
+        .search-component label {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            border-radius: 4px;
+            background-color: #F5F5F5;
+
+            input {
+                width: 100%;
+                padding: 7px 11px;
+                border: none;
+                border-radius: 4px;
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 18px;
+                background-color: #F5F5F5;
+                outline: none;
+            }
+
+            input::placeholder {
+                opacity: 50%;
+                color: #000000;
+            }
+        }
+    }
+}
+
+
+
+// For small screens
+@media screen and (max-width:767px) and (min-width:320px) {
+    header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #000000;
+    }
+
+    .topHeader {
+        * {
+            color: #FAFAFA;
+            font-family: $poppinsfont;
+        }
+
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #000000;
+    }
+
+    .discount {
+        gap: 8px;
+        width: 60%;
+        height: auto;
+        align-items: center;
+        margin-left: 5%;
+        text-align: center;
+
+
+        p {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        .shopNow a {
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 22px;
+            text-decoration: underline;
+        }
+    }
+
+    .languageSelect {
+
+        .languageOptions {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            background-color: #000000;
+            text-align: center;
+            display: none;
+            padding: 3px 10px 5px;
+
+            a {
+                display: block;
+            }
+
+            a:hover {
+                font-weight: 700;
+            }
+        }
+
+        a p {
+            width: auto;
+            height: auto;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 20px;
+            align-items: center;
+            position: relative;
+        }
+
+        a p i {
+            font-size: 20px;
+            position: absolute;
+        }
+    }
+
+    .header {
+        width: 92%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 3%;
+
+        * {
+            font-family: $poppinsfont;
+            color: #000000;
+        }
+
+        .logo {
+            width: auto;
+            font-family: $interFont;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 21px;
+            letter-spacing: 2px;
+        }
+
+        #mainNav {
+            display: none;
+        }
+
+        .navMenu {
+            font-size: 22px;
+        }
+
+        .components {
+            width: 80%;
+            height: auto;
+            display: flex;
+            gap: 24px;
+            justify-content: space-evenly;
+            align-items: center;
+
+
+            i {
+                font-size: 20px;
+            }
+        }
+
+        .search-component label {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            gap: 34px;
+            border-radius: 4px;
+            background-color: #F5F5F5;
+
+            input {
+                width: 100%;
+                padding: 7px 10px;
+                border: none;
+                border-radius: 4px;
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 18px;
+                background-color: #F5F5F5;
+                outline: none;
+            }
+
+            input::placeholder {
+                opacity: 50%;
+                color: #000000;
+            }
+        }
+
+    }
+}

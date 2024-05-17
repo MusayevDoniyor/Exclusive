@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXAM - 5 || Single Product Page</title>
+    <!-- CSS Style  -->
+    <link rel="stylesheet" href="./STYLES/productPage/product.css" />
+    <!-- Script -->
+    <script defer src="./JS/product.js"></script>
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="topHeader">
+        <div class="discount">
+          <p>
+            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+          </p>
+
+          <div class="shopNow">
+            <a href="#shop">ShopNow</a>
+          </div>
+        </div>
+
+        <div class="languageSelect">
+          <a href="#" id="languageToggle">
+            <p>English <i class="bx bx-chevron-down"></i></p>
+          </a>
+
+          <div class="languageOptions" id="languageOptions">
+            <a href="#" class="languageOption">Uzbekistan</a>
+            <a href="#" class="languageOption">German</a>
+            <a href="#" class="languageOption">Spanish</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="header">
+        <div class="logo">
+          <a href="./index.html">Exclusive</a>
+        </div>
+
+        <nav id="mainNav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#signUp">Sign Up</a></li>
+          </ul>
+        </nav>
+
+        <div class="navMenu">
+          <a href="#" id="menuToggle">
+            <i class="bx bx-menu"></i>
+          </a>
+        </div>
+
+        <div class="components">
+          <div class="search-component">
+            <label for="search">
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="What are you looking?"
+              />
+
+              <a href="#search">
+                <i class="bx bx-search"></i>
+              </a>
+            </label>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Main Section -->
+      <section class="mainSection">
+        <div class="productTitle">
+          <span class="account">Account</span>
+          <span>/</span>
+          <span class="category">Gaming</span>
+          <span>/</span>
+          <span class="productName"><b></b></span>
+        </div>
+
+        <div class="productContainer">
+          <div class="spinner"></div>
+          <div class="imgSide">
+            <img src="" alt="" />
+          </div>
+
+          <div class="textSide">
+            <div class="infos">
+              <div class="title">
+                <h2></h2>
+              </div>
+
+              <div class="ratings">
+                <span class="stars">⭐⭐⭐⭐⭐</span>
+                <span class="reviews"></span>
+                <span class="line">|</span>
+                <span class="inStock"> In Stock </span>
+              </div>
+
+              <div class="price">
+                <b></b>
+              </div>
+
+              <div class="description">
+                <p></p>
+              </div>
+            </div>
+
+            <div class="productParametrs">
+              <div class="selectColor">
+                <span class="color-title">Colours:</span>
+                <div class="colors">
+                  <input
+                    type="radio"
+                    name="color"
+                    id="colorBlue"
+                    class="colorBlue"
+                  />
+                  <input
+                    type="radio"
+                    name="color"
+                    id="colorRed"
+                    class="colorRed"
+                  />
+                </div>
+              </div>
+
+              <div class="selectSize">
+                <span class="size-title">Size:</span>
+
+                <div class="sizes">
+                  <span>XS</span>
+                  <span>S</span>
+                  <span>M</span>
+                  <span>L</span>
+                  <span>XL</span>
+                </div>
+              </div>
+
+              <div class="submitContainer">
+                <div class="productCountBuy">
+                  <span class="minusIcon">
+                    <i class="bx bx-minus"></i>
+                  </span>
+
+                  <span class="count">2</span>
+
+                  <span class="plusIcon">
+                    <i class="bx bx-plus"></i>
+                  </span>
+                </div>
+
+                <div class="buyNowBtn">
+                  <button type="submit">Buy Now</button>
+                </div>
+
+                <div class="addToLiked">
+                  <span>
+                    <i class="bx bx-heart"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="deliveryContainer">
+                <div class="delivery freeDelivery">
+                  <span>
+                    <i class="bx bxs-truck"></i>
+                  </span>
+
+                  <span class="deliveryTitle">
+                    Free Delivery
+                    <br />
+                    <a href="#postalCode">
+                      Enter your postal code for Delivery Availability</a
+                    >
+                  </span>
+                </div>
+
+                <div class="delivery returnDelivery">
+                  <span>
+                    <img src="./IMGS/Icon-return.svg" alt="Return Icon" />
+                  </span>
+
+                  <span class="deliveryTitle">
+                    Return Delivery
+                    <br />
+                    <a href="#postalCode">
+                      Free 30 Days Delivery Returns. Details</a
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

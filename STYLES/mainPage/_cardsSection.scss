@@ -1,0 +1,441 @@
+// For larger versions
+@media screen and (min-width:1024px) {
+    .cardsSection {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 7%;
+    }
+
+    .paginationBtns {
+        width: auto;
+        height: auto;
+        margin-left: auto;
+        margin-bottom: 25px;
+        gap: 8px;
+
+        a {
+            text-align: center;
+
+            i {
+
+                border-radius: 50%;
+                padding: 11px;
+                background-color: rgba(245, 245, 245, 1);
+                font-size: 22px;
+                color: black;
+            }
+        }
+    }
+
+    .containerCards {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 16px;
+    }
+
+    .productCard {
+        width: 100%;
+        height: auto;
+        overflow: auto;
+        font-family: $poppinsfont;
+        position: relative;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 4px;
+
+        a {
+            cursor: pointer;
+        }
+
+        img {
+            width: 190px;
+            height: 180px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+            border-radius: 4px;
+
+            &:hover+.cart-btn {
+                display: block;
+            }
+        }
+
+        .productTitle {
+            display: block;
+            margin-top: 15px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        b {
+            color: #DB4444;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            display: inline;
+            padding-right: 20px;
+        }
+
+        .productRateStars {
+            display: inline;
+            padding-right: 10px;
+            margin-bottom: 0;
+        }
+
+        .ratingCount {
+            opacity: 50%;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        .productDescription {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .cart-btn {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            padding: 10px 0;
+            border-radius: 0 0 4px 4px;
+            border: none;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+            background-color: #000000;
+            display: none;
+            bottom: 40%;
+        }
+
+        a .bx-heart {
+            width: 24px;
+            height: 24px;
+            color: #000000;
+            font-size: 20px;
+            position: absolute;
+            border-radius: 50%;
+            top: 35px;
+            right: 12px;
+        }
+
+        a .bx-show-alt {
+            width: 24px;
+            height: 24px;
+            color: #000;
+            font-size: 20px;
+            position: absolute;
+            border-radius: 50%;
+            top: 70px;
+            right: 12px;
+        }
+    }
+}
+
+
+// For medium versions
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .cardsSection {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 7%;
+    }
+
+    .paginationBtns {
+        width: auto;
+        height: auto;
+        margin-left: auto;
+        margin-bottom: 25px;
+        gap: 8px;
+
+        a {
+            text-align: center;
+
+            i {
+                border-radius: 50%;
+                padding: 10px;
+                background-color: rgba(245, 245, 245, 1);
+                font-size: 21px;
+                color: black;
+            }
+        }
+    }
+
+    .containerCards {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .productCard {
+        width: 100%;
+        height: auto;
+        overflow: auto;
+        font-family: $poppinsfont;
+        position: relative;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 4px;
+
+        a {
+            cursor: pointer;
+        }
+
+        img {
+            width: 190px;
+            height: 180px;
+            display: block;
+            object-fit: contain;
+            margin: 0 auto;
+            border-radius: 4px;
+
+            &:hover+.cart-btn {
+                display: block;
+            }
+        }
+
+        .productTitle {
+            display: block;
+            margin-top: 15px;
+            font-weight: 500;
+            font-size: 16px;
+            color: #000;
+            line-height: 24px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        b {
+            color: #DB4444;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            display: inline;
+            padding-right: 20px;
+        }
+
+        .productRateStars {
+            display: inline;
+            padding-right: 10px;
+            margin-bottom: 0;
+        }
+
+        .ratingCount {
+            opacity: 50%;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        .productDescription {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .cart-btn {
+            position: absolute;
+            top: 420px;
+            width: 100%;
+            height: auto;
+            padding: 10px 0;
+            border-radius: 0 0 4px 4px;
+            border: none;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+            background-color: #000000;
+            display: none;
+
+        }
+
+        a .bx-heart {
+            width: 24px;
+            height: 24px;
+            color: #000000;
+            font-size: 20px;
+            position: absolute;
+            border-radius: 50%;
+            top: 35px;
+            right: 12px;
+        }
+
+        a .bx-show-alt {
+            width: 24px;
+            height: 24px;
+            color: #000;
+            font-size: 20px;
+            position: absolute;
+            border-radius: 50%;
+            top: 70px;
+            right: 12px;
+        }
+    }
+}
+
+// For phone versions
+@media screen and (min-width:320px) and (max-width:767px) {
+    .cardsSection {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 7%;
+    }
+
+    .paginationBtns {
+        width: auto;
+        height: auto;
+        margin-left: auto;
+        margin-bottom: 25px;
+        gap: 8px;
+
+        a {
+            text-align: center;
+
+            i {
+                border-radius: 50%;
+                padding: 10px;
+                background-color: rgba(245, 245, 245, 1);
+                font-size: 21px;
+                color: black;
+            }
+        }
+    }
+
+    .containerCards {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .productCard {
+        width: 100%;
+        height: auto;
+        overflow: auto;
+        font-family: $poppinsfont;
+        position: relative;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 4px;
+        text-align: center;
+
+        a {
+            cursor: pointer;
+        }
+
+        img {
+            width: 190px;
+            height: 180px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+            border-radius: 4px;
+
+            &:hover+.cart-btn {
+                display: block;
+            }
+        }
+
+        .productTitle {
+            display: block;
+            margin-top: 15px;
+            font-weight: 500;
+            font-size: 16px;
+            color: #000;
+            line-height: 24px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        b {
+            color: #DB4444;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            display: inline;
+            padding-right: 20px;
+        }
+
+        .productRateStars {
+            display: inline;
+            padding-right: 10px;
+            margin-bottom: 0;
+        }
+
+        .ratingCount {
+            opacity: 50%;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+        }
+
+        .productDescription {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .cart-btn {
+            position: absolute;
+            top: 420px;
+            width: 100%;
+            height: auto;
+            padding: 10px 0;
+            border-radius: 0 0 4px 4px;
+            border: none;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+            background-color: #000000;
+            display: none;
+        }
+
+        a .bx-heart {
+            width: 24px;
+            height: 24px;
+            color: #000000;
+            font-size: 20px;
+            position: absolute;
+            border-radius: 50%;
+            top: 35px;
+            right: 12px;
+        }
+
+        a .bx-show-alt {
+            width: 24px;
+            height: 24px;
+            color: #000;
+            font-size: 20px;
+            position: absolute;
+            border-radius: 50%;
+            top: 70px;
+            right: 12px;
+        }
+    }
+}

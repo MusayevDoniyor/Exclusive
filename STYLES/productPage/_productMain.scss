@@ -1,0 +1,1101 @@
+// For larger versions
+@media screen and (min-width:1024px) {
+    .mainSection {
+        width: 95%;
+        height: auto;
+        margin: 5% auto 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productTitle {
+        width: auto;
+        height: auto;
+        gap: 12px;
+        margin-top: 5px;
+        margin-bottom: 25px;
+
+
+        span {
+            font-family: $poppinsfont;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            opacity: 50%;
+        }
+
+        .productName {
+            opacity: 100%;
+        }
+    }
+
+    .productContainer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .imgSide {
+        width: 52%;
+        height: auto;
+        border-radius: 4px;
+
+        img {
+            width: 100%;
+            height: 600px;
+            border-radius: 4px;
+        }
+    }
+
+    .textSide {
+        width: 42%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infos {
+        width: 90%;
+        height: auto;
+        border-bottom: 2px solid rgba(0, 0, 0, 1);
+
+        .title {
+            margin-top: -15px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 24px;
+            letter-spacing: 2px;
+            font-family: $interFont;
+        }
+
+        .ratings {
+            width: 100%;
+            height: auto;
+            gap: 16px;
+        }
+
+        .reviews {
+            opacity: 50%;
+            font-family: $poppinsfont;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            margin: 0 5px 0 2px;
+        }
+
+        .line {
+            margin-right: 10px;
+        }
+
+        .inStock {
+            font-family: $poppinsfont;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: rgba(0, 255, 102, 1);
+        }
+
+        .price {
+            font-family: $interFont;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 24px;
+            letter-spacing: 3px;
+            margin-top: 15px;
+        }
+
+        .description {
+            width: 77%;
+            font-family: $poppinsfont;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            padding-bottom: 15px;
+        }
+    }
+
+    .productParametrs {
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+
+        .selectColor {
+            width: auto;
+            height: auto;
+            display: flex;
+            gap: 24px;
+
+            .color-title {
+                width: auto;
+                height: auto;
+                font-family: $interFont;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 20px;
+                letter-spacing: 3px;
+            }
+
+            .colors {
+                display: flex;
+                gap: 8px;
+            }
+
+            .colors input {
+                width: 23px;
+                height: 23px;
+                appearance: none;
+                border: 1px solid #ccc;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .colorBlue {
+                background-color: rgba(160, 188, 224, 1);
+            }
+
+            .colorRed {
+                background-color: rgba(224, 117, 117, 1);
+            }
+
+            .colors input:checked.colorBlue {
+                border: 2px solid rgba(160, 188, 224, 1);
+                border: 2px solid black;
+            }
+
+            .colors input:checked.colorRed {
+                border: 2px solid rgba(224, 117, 117, 1);
+                border: 2px solid black;
+            }
+        }
+
+        .selectSize {
+            width: auto;
+            height: auto;
+            display: flex;
+            gap: 24px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .size-title {
+            width: auto;
+            height: auto;
+            font-family: $interFont;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 20px;
+            letter-spacing: 3px;
+        }
+
+        .sizes {
+            width: auto;
+            height: auto;
+            display: flex;
+            gap: 16px;
+            text-align: center;
+
+            span {
+                display: block;
+                width: 30px;
+                height: 30px;
+                border-radius: 4px;
+                border: 1px solid rgba(0, 0, 0, 0.5);
+                cursor: pointer;
+                font-family: $poppinsfont;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+                padding-top: 5px;
+
+                &:hover {
+                    background-color: rgba(219, 68, 68, 1);
+                    color: white;
+                }
+            }
+        }
+
+        .submitContainer {
+            width: auto;
+            height: auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .productCountBuy {
+            width: auto;
+            height: auto;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            display: flex;
+            gap: 15px;
+
+            i {
+                cursor: pointer;
+            }
+        }
+
+
+
+        .count {
+            width: auto;
+            height: auto;
+            cursor: pointer;
+            font-family: $poppinsfont;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+            align-items: center;
+            padding: 0 7px;
+        }
+
+        .minusIcon i {
+            width: auto;
+            height: 100%;
+            border-right: 1px solid rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            font-size: 15px;
+            padding-top: 5px;
+
+            &:hover {
+                background-color: rgba(219, 68, 68, 1);
+                color: white;
+            }
+        }
+
+        .plusIcon i {
+            width: auto;
+            height: 100%;
+            border-left: 1px solid rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            font-size: 15px;
+            padding-top: 5px;
+
+            &:hover {
+                background-color: rgba(219, 68, 68, 1);
+                color: white;
+            }
+        }
+
+        .buyNowBtn {
+            width: auto;
+            height: auto;
+
+
+            button {
+                border: none;
+                background-color: rgba(219, 68, 68, 1);
+                color: white;
+                padding: 10px 48px;
+                gap: 10px;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        }
+
+        .addToLiked {
+            width: auto;
+            height: auto;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 4px;
+
+            i {
+                padding: 8px;
+                font-size: 17px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: rgba(219, 68, 68, 1);
+                    color: white;
+                }
+            }
+        }
+
+        .deliveryContainer {
+            width: 100%;
+            height: auto;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            padding: 25px 0;
+            border-radius: 4px;
+            font-family: $poppinsfont;
+        }
+
+        .delivery {
+            gap: 16px;
+            padding-left: 10px;
+        }
+
+        .freeDelivery {
+            border-bottom: 1px solid rgba(0, 0, 0, 1);
+            padding-bottom: 20px;
+
+            i,
+            img {
+                width: 40px;
+                height: 40px;
+                font-size: 30px;
+                padding-left: 10px;
+            }
+        }
+
+        .deliveryTitle {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            position: absolute;
+            padding-left: 20px;
+
+            a {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                text-decoration: underline;
+                color: rgba(0, 0, 0, 1);
+            }
+        }
+    }
+}
+
+
+
+// For medium versions
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .mainSection {
+        width: 95%;
+        height: auto;
+        margin: 5% auto 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productTitle {
+        width: auto;
+        height: auto;
+        gap: 12px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+
+
+        span {
+            font-family: $poppinsfont;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            opacity: 50%;
+        }
+
+        .productName {
+            opacity: 100%;
+        }
+    }
+
+    .productContainer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .imgSide {
+        width: 90%;
+        height: auto;
+        border-radius: 4px;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+    }
+
+    .textSide {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infos {
+        width: 90%;
+        height: auto;
+        border-bottom: 2px solid rgba(0, 0, 0, 1);
+
+        .title {
+            margin-top: -15px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: 2px;
+            font-family: $interFont;
+        }
+
+        .ratings {
+            width: 100%;
+            height: auto;
+            gap: 16px;
+        }
+
+        .reviews {
+            opacity: 50%;
+            font-family: $poppinsfont;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            margin: 0 5px 0 2px;
+        }
+
+        .line {
+            margin-right: 10px;
+        }
+
+        .inStock {
+            font-family: $poppinsfont;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: rgba(0, 255, 102, 1);
+        }
+
+        .price {
+            font-family: $interFont;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 24px;
+            letter-spacing: 3px;
+            margin-top: 15px;
+        }
+
+        .description {
+            width: 77%;
+            font-family: $poppinsfont;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            padding-bottom: 15px;
+        }
+    }
+
+    .productParametrs {
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+
+        .selectColor {
+            width: auto;
+            height: auto;
+            display: flex;
+            gap: 24px;
+
+            .color-title {
+                width: auto;
+                height: auto;
+                font-family: $interFont;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 20px;
+                letter-spacing: 3px;
+            }
+
+            .colors {
+                display: flex;
+                gap: 8px;
+            }
+
+            .colors input {
+                width: 23px;
+                height: 23px;
+                appearance: none;
+                border: 1px solid #ccc;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .colorBlue {
+                background-color: rgba(160, 188, 224, 1);
+            }
+
+            .colorRed {
+                background-color: rgba(224, 117, 117, 1);
+            }
+
+            .colors input:checked.colorBlue {
+                border: 2px solid rgba(160, 188, 224, 1);
+                border: 2px solid black;
+            }
+
+            .colors input:checked.colorRed {
+                border: 2px solid rgba(224, 117, 117, 1);
+                border: 2px solid black;
+            }
+        }
+
+        .selectSize {
+            width: auto;
+            height: auto;
+            display: flex;
+            gap: 24px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .size-title {
+            width: auto;
+            height: auto;
+            font-family: $interFont;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 20px;
+            letter-spacing: 3px;
+        }
+
+        .sizes {
+            width: auto;
+            height: auto;
+            display: flex;
+            gap: 16px;
+            text-align: center;
+
+            span {
+                display: block;
+                width: 30px;
+                height: 30px;
+                border-radius: 4px;
+                border: 1px solid rgba(0, 0, 0, 0.5);
+                cursor: pointer;
+                font-family: $poppinsfont;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+                padding-top: 5px;
+
+                &:hover {
+                    background-color: rgba(219, 68, 68, 1);
+                    color: white;
+                }
+            }
+        }
+
+        .submitContainer {
+            width: auto;
+            height: auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .productCountBuy {
+            width: auto;
+            height: auto;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            display: flex;
+            gap: 15px;
+
+            i {
+                cursor: pointer;
+            }
+        }
+
+
+
+        .count {
+            width: auto;
+            height: auto;
+            cursor: pointer;
+            font-family: $poppinsfont;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 25px;
+            align-items: center;
+            padding: 0 7px;
+        }
+
+        .minusIcon i {
+            width: auto;
+            height: 100%;
+            border-right: 1px solid rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            font-size: 15px;
+            padding-top: 5px;
+
+            &:hover {
+                background-color: rgba(219, 68, 68, 1);
+                color: white;
+            }
+        }
+
+        .plusIcon i {
+            width: auto;
+            height: 100%;
+            border-left: 1px solid rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            font-size: 15px;
+            padding-top: 5px;
+
+            &:hover {
+                background-color: rgba(219, 68, 68, 1);
+                color: white;
+            }
+        }
+
+        .buyNowBtn {
+            width: auto;
+            height: auto;
+
+
+            button {
+                border: none;
+                background-color: rgba(219, 68, 68, 1);
+                color: white;
+                padding: 10px 48px;
+                gap: 10px;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        }
+
+        .addToLiked {
+            width: auto;
+            height: auto;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 4px;
+
+            i {
+                padding: 8px;
+                font-size: 17px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: rgba(219, 68, 68, 1);
+                    color: white;
+                }
+            }
+        }
+
+        .deliveryContainer {
+            width: 100%;
+            height: auto;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            padding: 25px 0;
+            border-radius: 4px;
+            font-family: $poppinsfont;
+        }
+
+        .delivery {
+            gap: 16px;
+            padding-left: 10px;
+        }
+
+        .freeDelivery {
+            border-bottom: 1px solid rgba(0, 0, 0, 1);
+            padding-bottom: 20px;
+
+            i,
+            img {
+                width: 40px;
+                height: 40px;
+                font-size: 30px;
+                padding-left: 10px;
+            }
+        }
+
+        .deliveryTitle {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            position: absolute;
+            padding-left: 20px;
+
+            a {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                text-decoration: underline;
+                color: rgba(0, 0, 0, 1);
+            }
+        }
+    }
+}
+
+
+
+// For phone versions
+@media screen and (min-width:320px) and (max-width:767px) {
+    .mainSection {
+        width: 95%;
+        height: auto;
+        margin: 5% auto 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .productTitle {
+        width: auto;
+        height: auto;
+        gap: 12px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+
+
+        span {
+            font-family: $poppinsfont;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            opacity: 50%;
+        }
+
+        .productName {
+            opacity: 100%;
+        }
+    }
+
+    .productContainer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .imgSide {
+        width: 92%;
+        height: auto;
+        border-radius: 4px;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+    }
+
+    .textSide {
+        width: 92%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .infos {
+        width: 95%;
+        height: auto;
+        border-bottom: 2px solid rgba(0, 0, 0, 1);
+
+        .title {
+            margin-top: -15px;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 35px;
+            letter-spacing: 1px;
+            font-family: $interFont;
+            text-align: left;
+            align-items: center;
+        }
+
+        .ratings {
+            width: 100%;
+            height: auto;
+            gap: 15px;
+        }
+
+        .reviews {
+            opacity: 50%;
+            font-family: $poppinsfont;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            margin: 0 5px 0 2px;
+        }
+
+        .line {
+            display: none;
+        }
+
+        .inStock {
+            font-family: $poppinsfont;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: rgba(0, 255, 102, 1);
+        }
+
+        .price {
+            font-family: $interFont;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 24px;
+            letter-spacing: 3px;
+            margin-top: 15px;
+        }
+
+        .description {
+            width: 90%;
+            margin: 0 auto;
+            font-family: $poppinsfont;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            padding-bottom: 15px;
+        }
+    }
+
+    .productParametrs {
+        width: 90%;
+        height: auto;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+
+        .selectColor {
+            width: auto;
+            height: auto;
+            display: flex;
+            gap: 20px;
+
+            .color-title {
+                width: auto;
+                height: auto;
+                font-family: $interFont;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 20px;
+                letter-spacing: 3px;
+            }
+
+            .colors {
+                display: flex;
+                gap: 8px;
+            }
+
+            .colors input {
+                width: 23px;
+                height: 23px;
+                appearance: none;
+                border: 1px solid #ccc;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .colorBlue {
+                background-color: rgba(160, 188, 224, 1);
+            }
+
+            .colorRed {
+                background-color: rgba(224, 117, 117, 1);
+            }
+
+            .colors input:checked.colorBlue {
+                border: 2px solid rgba(160, 188, 224, 1);
+                border: 2px solid black;
+            }
+
+            .colors input:checked.colorRed {
+                border: 2px solid rgba(224, 117, 117, 1);
+                border: 2px solid black;
+            }
+        }
+
+        .selectSize {
+            width: auto;
+            height: auto;
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .size-title {
+            width: auto;
+            height: auto;
+            font-family: $interFont;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 20px;
+            letter-spacing: 3px;
+        }
+
+        .sizes {
+            width: auto;
+            height: auto;
+            display: flex;
+            gap: 14px;
+            text-align: center;
+
+            span {
+                display: block;
+                width: 30px;
+                height: 30px;
+                border-radius: 4px;
+                border: 1px solid rgba(0, 0, 0, 0.5);
+                cursor: pointer;
+                font-family: $poppinsfont;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+                padding-top: 5px;
+
+                &:hover {
+                    background-color: rgba(219, 68, 68, 1);
+                    color: white;
+                }
+            }
+        }
+
+        .submitContainer {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .productCountBuy {
+            width: 70%;
+            height: auto;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin: 0 auto;
+
+            i {
+                cursor: pointer;
+            }
+        }
+
+
+
+        .count {
+            width: auto;
+            height: auto;
+            cursor: pointer;
+            font-family: $poppinsfont;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 20px;
+            align-items: center;
+            padding: 2px 7px;
+        }
+
+
+        .minusIcon i {
+            width: auto;
+            height: 100%;
+            border-right: 1px solid rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            font-size: 15px;
+            padding-top: 5px;
+            padding-right: 2px;
+
+            &:hover {
+                background-color: rgba(219, 68, 68, 1);
+                color: white;
+            }
+        }
+
+        .plusIcon i {
+            width: auto;
+            height: 100%;
+            border-left: 1px solid rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            font-size: 15px;
+            padding-top: 5px;
+            padding-left: 2px;
+
+            &:hover {
+                background-color: rgba(219, 68, 68, 1);
+                color: white;
+            }
+        }
+
+        .buyNowBtn {
+            width: auto;
+            height: auto;
+
+
+            button {
+                border: none;
+                background-color: rgba(219, 68, 68, 1);
+                color: white;
+                padding: 10px 48px;
+                gap: 10px;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        }
+
+        .addToLiked {
+            width: 30%;
+            margin: 0 auto;
+            height: auto;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 4px;
+
+            i {
+                width: 100%;
+                padding: 8px;
+                font-size: 18px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: rgba(219, 68, 68, 1);
+                    color: white;
+                }
+            }
+        }
+
+        .deliveryContainer {
+            width: 100%;
+            height: auto;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            padding: 25px 0;
+            border-radius: 4px;
+            font-family: $poppinsfont;
+        }
+
+
+        .freeDelivery {
+            border-bottom: 1px solid rgba(0, 0, 0, 1);
+            padding-bottom: 20px;
+
+            i,
+            img {
+                width: 35px;
+                height: 35px;
+                font-size: 25px;
+            }
+        }
+
+        .deliveryTitle {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            padding-left: 20px;
+
+            a {
+                font-weight: 500;
+                font-size: 11px;
+                line-height: 16px;
+                text-decoration: underline;
+                color: rgba(0, 0, 0, 1);
+            }
+        }
+    }
+}

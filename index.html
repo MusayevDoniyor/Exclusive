@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXAM - 5 || Main Page</title>
+    <!-- CSS Style  -->
+    <link rel="stylesheet" href="./STYLES/mainPage/main.css" />
+    <!-- Script -->
+    <script defer src="./JS/script.js"></script>
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="topHeader">
+        <div class="discount">
+          <p>
+            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+          </p>
+
+          <div class="shopNow">
+            <a href="#shop">ShopNow</a>
+          </div>
+        </div>
+
+        <div class="languageSelect">
+          <a href="#" id="languageToggle">
+            <p>English <i class="bx bx-chevron-down"></i></p>
+          </a>
+
+          <div class="languageOptions" id="languageOptions">
+            <a href="#" class="languageOption">Uzbekistan</a>
+            <a href="#" class="languageOption">German</a>
+            <a href="#" class="languageOption">Spanish</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="header">
+        <div class="logo">
+          <a href="./index.html">Exclusive</a>
+        </div>
+
+        <nav id="mainNav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#signIn">Sign in</a></li>
+          </ul>
+        </nav>
+
+        <div class="navMenu">
+          <a href="#" id="menuToggle">
+            <i class="bx bx-menu"></i>
+          </a>
+        </div>
+
+        <div class="components">
+          <div class="search-component">
+            <label for="search">
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="What are you looking?"
+              />
+
+              <a href="#search">
+                <i class="bx bx-search"></i>
+              </a>
+            </label>
+          </div>
+
+          <div class="other-components">
+            <a href="#like">
+              <i class="bx bx-heart"></i>
+            </a>
+
+            <a href="#cartBuy">
+              <i class="bx bx-cart-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="textSide">
+          <div class="textSide-title">
+            <img src="./IMGS/AppleWhiteLogo.png" alt="White Apple Logo" />
+            <p>Phone 14 Series</p>
+          </div>
+
+          <div class="textSide-discount">
+            <h2>Up to 10% off Voucher</h2>
+          </div>
+
+          <div class="textSide-shopNow">
+            <a href="#shopNow">
+              SHop Now <i class="bx bx-right-arrow-alt"></i>
+            </a>
+          </div>
+        </div>
+        <div class="imgSide">
+          <img src="./IMGS/IphoneHeroSection.png" alt="Img of Iphone 14" />
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="section2">
+        <div class="section2-title">
+          <div class="rectangle"></div>
+          <p>Categories</p>
+        </div>
+
+        <div class="categoryBrowse">
+          <h2>Browse By Category</h2>
+        </div>
+
+        <div class="categories">
+          <div>
+            <i class="bx bx-mobile-alt"></i>
+            Phone
+          </div>
+
+          <div>
+            <i class="bx bx-laptop"></i>
+            Computers
+          </div>
+
+          <div>
+            <i class="bx bxs-watch-alt"></i>
+            Smartwatch
+          </div>
+
+          <div>
+            <i class="bx bx-camera"></i>
+            Camera
+          </div>
+
+          <div>
+            <i class="bx bx-headphone"></i>
+            HeadPhones
+          </div>
+
+          <div>
+            <img src="./IMGS/Category-Gamepad.svg" alt="Game Pad" />
+            Gaming
+          </div>
+        </div>
+      </section>
+
+      <!-- Cards Section -->
+      <section class="cardsSection">
+        <div class="section2-title">
+          <div class="rectangle"></div>
+          <p>Categories</p>
+        </div>
+
+        <div class="paginationBtns">
+          <a href="#prev">
+            <i class="bx bx-left-arrow-alt"></i>
+          </a>
+
+          <a href="#next">
+            <i class="bx bx-right-arrow-alt"></i>
+          </a>
+        </div>
+
+        <!-- Spinner-->
+        <div class="spinner"></div>
+
+        <div class="containerCards"></div>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="section3">
+        <div class="section3-textSide">
+          <div class="textSide-title">
+            <p>Categories</p>
+          </div>
+          <div class="textSide-heading">
+            <h2>Enhance Your Music Experience</h2>
+          </div>
+
+          <div class="dates">
+            <div id="hour"></div>
+            <div id="day"></div>
+            <div id="minutes"></div>
+            <div id="second"></div>
+          </div>
+
+          <div class="btnBuy">
+            <button>Buy Now</button>
+          </div>
+        </div>
+        <div class="section3-imgSide">
+          <img src="./IMGS/JBL_BOOMBOX_2_HERO_020_x1 (1) 1.png" alt="" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
