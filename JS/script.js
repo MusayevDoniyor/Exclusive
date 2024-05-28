@@ -105,8 +105,8 @@ async function displayProducts() {
     image.src = productImg;
 
     const title = document.createElement("a");
-    title.href = `http://127.0.0.1:5500/product.html?id=${product.id}`;
-    title.classList.add("productTitle");
+    title.href = `https://MusayevDoniyor.github.io/Exclusive/products.html?id=${product.id}`;
+    https: title.classList.add("productTitle");
     title.textContent = productTitle;
 
     const description = document.createElement("p");
@@ -162,7 +162,9 @@ function redirect() {
 
   // No Token
   if (!token) {
-    window.location.replace("http://127.0.0.1:5500/login.html");
+    window.location.replace(
+      "https://MusayevDoniyor.github.io/Exclusive/login.html"
+    );
   }
 }
 

@@ -91,6 +91,8 @@ function redirect() {
   const token = localStorage.getItem("token");
 
   if (token) {
-    window.location.replace("http://127.0.0.1:5500/index.html");
+    window.location.replace(
+      "https://MusayevDoniyor.github.io/Exclusive/index.html"
+    );
   }
 }
